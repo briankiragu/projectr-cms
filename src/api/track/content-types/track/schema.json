@@ -4,7 +4,8 @@
   "info": {
     "singularName": "track",
     "pluralName": "tracks",
-    "displayName": "Track"
+    "displayName": "Track",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,8 +18,7 @@
       "unique": true
     },
     "lyrics": {
-      "type": "text",
-      "required": true
+      "type": "text"
     }
   }
 }
