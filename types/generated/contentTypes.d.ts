@@ -368,14 +368,13 @@ export interface ApiTrackTrack extends Schema.CollectionType {
     singularName: 'track';
     pluralName: 'tracks';
     displayName: 'Track';
-    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String & Attribute.Required & Attribute.Unique;
-    lyrics: Attribute.Text;
+    lyrics: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
